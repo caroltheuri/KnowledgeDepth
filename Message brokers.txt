@@ -1,0 +1,7 @@
+#Difference between RabbitMQ,Redis,Kafka
+
+RabbitMQ, Kafka and Redis are message brokers used for asynchronous communication where you do not have to wait for a response like rest.
+Each has its own disadvantages and advantages.
+Redis is in its best where messages are short lived and not persistent. Transmits up to a million messages per second without persistence
+Kafka is ideal when storing a large amount of data for long periods of time. Transmits up to a million messages per second with persistence
+RabbitMQ is ideal when there is complex routing. Transmits 50k messages per second and with persistence.
